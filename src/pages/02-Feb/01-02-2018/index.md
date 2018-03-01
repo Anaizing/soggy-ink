@@ -6,7 +6,7 @@ title: "Basic Intro to React-Day 29"
 
 ## 15 min read...
 
-![]()
+![a spoon full of 100s and 1000s](https://images.unsplash.com/photo-1516478379578-ea8bea43365f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f484d00625536efcf544aa8f799a84b5&auto=format&fit=crop&w=1050&q=80)
 
 # Basic Intro to React
 
@@ -176,11 +176,55 @@ Your pen should look like this at this point...
 
 ![codepen screenshot](https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/28279017_10159966672640117_8347520914967789252_n.jpg?oh=10ea62bbd388aa243c7b1767dcf9afad&oe=5B049661)
 
-Im sure you can see the potential of this. in big applications you can compose the entire application of re-usable pieces. And these somponent is not even using any logic, its not using state, as in its not listening out for clicks or anything like that.
+Im sure you can see the potential of this. In big applications you can compose the entire application of re-usable pieces. And this component is not even using any logic, its not using state, as in its not listening out for clicks or anything like that. That can be done and I will cover it in future blog posts. And once we do append our logic to our components, we will have small reusable, mantainable and easy to manage pieces with their own logic contained in them, which we can use anywhere to build amazing applications
+
+But that is the main idea behind React, the reusable components, this is why react is so great. And why this component concept is so great
+
+
+
+
+# and now...
+
+
+Lets do one more thing though. At this point we are calling `ReactDOM.render` twice, so lets fix that.
+
+What we can do is...
+
+* get rid of the seccond div
+* change the id name to app
+* get rid of the second ReactDOM.render 
+* add a variable under our function.
+
+```js
+var app = (
+  <div>
+    <Person name="Alex" age="28"/>
+    <Person name="Anai" age="32"/>
+  </div>
+);
+
+```
+
+* we wrap this variable in parenthesis so we can use JSX, over multiple lines.
+* Then we can output our person component as we did before, with the necessary attributes
+* wrap the component(s) in a parent div, since JSX has a requirement of only having one root element.
+
+* once this is done, we can mount the app variable as the first argument to ReactDOM.render, like so...
+
+```js
+ReactDOM.render(app, document.querySelector('#app'));
+
+```
+ * and also adjust the id name to app as our query selector.
+
+ ![screenshot of codepen](https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/28468588_10159966798290117_9097745506838485354_n.jpg?oh=ecc90d7789d9d300ee574b76de4bb229&oe=5B16DEBF)
+
+ What we now have is both elements nested in the same div. this method of only having one react DOM render call, and creating the app inside it with nested components, is the prefered method, and far more popular way of building apps in React.
+ With this approach we are creating SINGLE PAGE APPS or SPAs
 
 Resources
 
-[Udacity-Version Control with Git ](https://classroom.udacity.com/courses/ud123)
+[Udemy-react-the-complete-guide-incl-redux ](https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/t/lecture/8268496?start=0)
 
 _Soggy Ink- By Anai Araya_<br>
 Follow me [@Anaizing](https://twitter.com/Anaizing) <br>
