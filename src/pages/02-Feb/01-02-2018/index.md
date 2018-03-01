@@ -108,8 +108,19 @@ ReactDOM.render takes in two arguments, first our custom element. the second arg
 
 With that im telling react that i want to render this function (the person component) to the div with the id p1.
 
-Now lets get rid of the other html div we created at the start and put in another div with an id of p2.
+But its not really reusable yet.
 
+
+```html
+<div id="p1"></div>
+
+<div id="p2"></div>
+
+```
+Now lets get rid of the other html div we created at the start and put in another div with an id of p2, like above.
+Say we have this second hook p2 in my html file and we wanted to render a different component, a different person. We would have to hard code the values into that and create a new component. with React we can configure them dynamically as we need them.
+
+So what we will do is add an argument to the function called `props`.
 
 
 
