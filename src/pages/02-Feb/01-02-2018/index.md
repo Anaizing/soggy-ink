@@ -120,23 +120,63 @@ But its not really reusable yet.
 Now lets get rid of the other html div we created at the start and put in another div with an id of p2, like above.
 Say we have this second hook p2 in my html file and we wanted to render a different component, a different person. We would have to hard code the values into that and create a new component. with React we can configure them dynamically as we need them.
 
-So what we will do is add an argument to the function called `props`.
+So what we will do is add an argument to the function called `props`. You could all it anything else, but the concept we are using here is props.
 
+React automatically gives us an argument in that function which we turn into a component with this syntax `<Person />`, and `props` contains all the `attributes` which we add to our component. Lets add some attributes...
 
+```js
 
+ReactDOM.render(<Person name="Anai" age="32"/>, document.querySelector('#p1'));
+```
 
+Once we do this we can take change the jsx in our function to output this information dynamically. like so...
 
+```js
+function Person() {
+    return (
+        <div class="person">
+            <h1>{props.name}</h1>
+            <p>Your Age: {props.age}</p>
+        </div>
+    );
+}
 
+ReactDOM.render(<Person name="Anai" age="32"/>, document.querySelector('#p1'));
+```
+* we output dynamic content in React with curly braces
+* only one pair of curly braces not 2
+* then we reach out to props.name and or props.age, which are the attributes we stated below the function.
 
+This is great, what we can now do is repeat the render query selector
+```js
+ReactDOM.render(<Person name="Alex" age="28"/>, document.querySelector('#p2'));
+```
+* and just change the id to match the html div we created.
+* we can now pass different props to that query selector like we see above.
 
+Now both components use the same base. The use the same function which is turned into a component by react and we then pass in different props to differentiate them. We're really taking advantage of the component concept, because we only wrote the html(jsx function) once, and now we can re-use it over and over gain.
 
+# note this is just to show you how react works
 
+So your js window should look like this...
+```js
+function Person() {
+    return (
+        <div class="person">
+            <h1>{props.name}</h1>
+            <p>Your Age: {props.age}</p>
+        </div>
+    );
+}
 
+ReactDOM.render(<Person name="Anai" age="32"/>, document.querySelector('#p1'))
+ReactDOM.render(<Person name="Alex" age="28"/>, document.querySelector('#p2'))
+```
+Your pen should look like this at this point...
 
+![codepen screenshot](https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/28279017_10159966672640117_8347520914967789252_n.jpg?oh=10ea62bbd388aa243c7b1767dcf9afad&oe=5B049661)
 
-
-
-
+Im sure you can see the potential of this. in big applications you can compose the entire application of re-usable pieces. And these somponent is not even using any logic, its not using state, as in its not listening out for clicks or anything like that.
 
 Resources
 
