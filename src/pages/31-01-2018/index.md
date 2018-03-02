@@ -11,7 +11,7 @@ title: "The TC39 process for ECMAScript features-Day 28"
 
 Each proposal for an ECMAScript feature goes through the following maturity stages, starting with stage 0. The progression from one stage to the next one must be approved by TC39.
 
-# Stage 0: strawmanlalala
+# Stage 0: strawman
 
 What is it? A free-form way of submitting ideas for evolving ECMAScript. Submissions must come either from a TC39 member or a non-member who has registered as a TC39 contributor.
 
