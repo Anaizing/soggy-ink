@@ -6,7 +6,6 @@ title: "The TC39 process for ECMAScript features-Day 28"
 
 ## 15 min read...
 
-# The TC39 process for ECMAScript features
 
 ![stairs](https://images.unsplash.com/photo-1465765639406-044153778532?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c43bc938c4abd051a81ba80a5a2d0e60&auto=format&fit=crop&w=1500&q=80)
 
