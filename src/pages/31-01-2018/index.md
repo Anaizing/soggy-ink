@@ -1,41 +1,51 @@
 ---
 path: "/Day-28"
 date: "2018-01-31T17:12:33.962Z"
-title: "ES6 Arrow Functions-Day 28"
+title: "The TC39 process for ECMAScript features-Day 28"
 ---
 
 ## 15 min read...
 
 ![]()
 
+Each proposal for an ECMAScript feature goes through the following maturity stages, starting with stage 0. The progression from one stage to the next one must be approved by TC39.
 
-# Arrow functions 
+Stage 0: strawman  
+What is it? A free-form way of submitting ideas for evolving ECMAScript. Submissions must come either from a TC39 member or a non-member who has registered as a TC39 contributor.
 
+What’s required? The document must be reviewed at a TC39 meeting (source) and is then added to the page with stage 0 proposals.
 
+Stage 1: proposal  
+What is it? A formal proposal for the feature.
 
-```js
-//before
-function foo() {
-    return 2;
-}
- //ES6
-foo = x => 2;
-```
+What’s required? A so-called champion must be identified who is responsible for the proposal. Either the champion or a co-champion must be a member of TC39 (source). The problem solved by the proposal must be described in prose. The solution must be described via examples, an API and a discussion of semantics and algorithms. Lastly, potential obstacles for the proposal must be identified, such as interactions with other features and implementation challenges. Implementation-wise, polyfills and demos are needed.
 
+What’s next? By accepting a proposal for stage 1, TC39 declares its willingness to examine, discuss and contribute to the proposal. Going forward, major changes to the proposal are expected.
 
-# Ternary operator
+Stage 2: draft  
+What is it? A first version of what will be in the specification. At this point, an eventual inclusion of the feature in the standard is likely.
 
-```js
-//before
-function foo(x) {
-    if(x > 5) return x;
-    else return 1;
-}
+What’s required? The proposal must now additionally have a formal description of the syntax and semantics of the feature (using the formal language of the ECMAScript specification). The description should be as complete as possible, but can contain todos and placeholders. Two experimental implementations of the feature are needed, but one of them can be in a transpiler such as Babel.
 
-//ES6
-var foo = x => x > 5 ? x : 1;
-```
+What’s next? Only incremental changes are expected from now on.
 
+Stage 3: candidate  
+What is it? The proposal is mostly finished and now needs feedback from implementations and users to progress further.
+
+What’s required? The spec text must be complete. Designated reviewers (appointed by TC39, not by the champion) and the ECMAScript spec editor must sign off on the spec text. There must be at least two spec-compliant implementations (which don’t have to be enabled by default).
+
+What’s next? Henceforth, changes should only be made in response to critical issues raised by the implementations and their use.
+
+Stage 4: finished  
+What is it? The proposal is ready to be included in the standard.
+
+What’s required? The following things are needed before a proposal can reach this stage:
+
+Test 262 acceptance tests (roughly, unit tests for the language feature, written in JavaScript).
+Two spec-compliant shipping implementations that pass the tests.
+Significant practical experience with the implementations.
+The ECMAScript spec editor must sign off on the spec text.
+What’s next? The proposal will be included in the ECMAScript specification as soon as possible. When the spec goes through its yearly ratification as a standard, the proposal is ratified as part of it.
 
 Resources
 
