@@ -17,7 +17,7 @@ What is it? A free-form way of submitting ideas for evolving ECMAScript. Submiss
 
 What’s required? The document must be reviewed at a TC39 meeting (source) and is then added to the page with stage 0 proposals.
 
-# Stage 1: proposal  
+# Stage 1: proposal
 
 What is it? A formal proposal for the feature.
 
