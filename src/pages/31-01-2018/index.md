@@ -54,7 +54,7 @@ What’s next? The proposal will be included in the ECMAScript specification as 
 
 Resources
 
-[Udacity-Version Control with Git ](https://classroom.udacity.com/courses/ud123)
+[TC39 process for ECMAScript features](http://2ality.com/2015/11/tc39-process.html)
 
 _Soggy Ink- By Anai Araya_<br>
 Follow me [@Anaizing](https://twitter.com/Anaizing) <br>
