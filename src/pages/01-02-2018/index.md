@@ -8,7 +8,7 @@ title: "Basic Intro to React-Day 29"
 
 ![a spoon full of 100s and 1000s](https://images.unsplash.com/photo-1516478379578-ea8bea43365f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f484d00625536efcf544aa8f799a84b5&auto=format&fit=crop&w=1050&q=80)
 
-# Basic Intro to Reactlalala
+# Basic Intro to React
 
 Today im gonna take you through a a very basic, entry level introduction to React. Jump on your codepen if you wanna follow along. Youll also have to go to codepen's settings and under Javascript at the bottom of the options you have pulldown menu named Quick-add.To this add  `react` and also add `reactDOM`, and also set the Javascript Preprocessor to `Babel`. Now we're ready to play.
 
