@@ -1,5 +1,7 @@
 # soggy ink
 
+![]()
+
 A blog built with Gatsby. Using React and GraphQL
 
 
