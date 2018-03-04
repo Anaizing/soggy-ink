@@ -1,6 +1,6 @@
 # soggy ink
 
-A blog built with Gatsby. Uses React and GraphQL
+A blog built with Gatsby. Using React and GraphQL
 
 
 _Soggy Ink- By Anai Araya_<br>
