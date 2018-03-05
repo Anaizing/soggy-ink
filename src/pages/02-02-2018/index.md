@@ -8,6 +8,10 @@ title: "Exports and Imports-Day 30"
 
 ![]()
 
+As we have [covered before](http://soggy-ink.surge.sh/Day-19), with ES6 we can write modular code. This refers to the way we structure our work and link files and components together, a way we can split up our code onto multiple files.
+
+The idea behind imports & exports statements which make up the modular structure/modules, is that inside a javascript file we can import content from another file, so that the javascript files themselves know their dependencies.
+
 
 
 
