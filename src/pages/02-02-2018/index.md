@@ -20,7 +20,7 @@ There are different ways and syntax used to import and export files, depending o
 
 Say we have a person.js file and also a utility.js file and we need to use all or part of both in a third file called app.js
 
-These are two ways in which to export/import files. On the left we have person.js
+Here are two ways in which to export/import files. On the left we have person.js which will export the `person` component
 
 
 
